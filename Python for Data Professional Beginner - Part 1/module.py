@@ -21,7 +21,7 @@ print(bilangan1 + bilangan2)
 bilangan1 = 20
 bilangan2 = 10
 print(bilangan1 - bilangan2)
-"""
+
 
 ##Tugas Praktek - 2
 harga_asli = 20000
@@ -33,3 +33,26 @@ print(harga_final)
 ##Quiz 1
 
 ##Quiz 2
+
+#Chapter2 - Mari mengenal python
+##Quiz 1
+
+##Quiz 2
+
+## Tipe data dasar: Null, Boolean, Numeric, dan Text
+
+##Quiz 1
+
+##Quiz 2
+
+## Sequence type - 1
+contoh_list = [1, 'dua', 3, 4.0, 5]
+print(contoh_list[0])
+print(contoh_list[3])
+contoh_list = [1, 'dua', 3, 4.0, 5]
+contoh_list[3] = 'empat'
+print(contoh_list[3])
+"""
+# Sequence type - 2
+contoh_tuple = ('Juni', 'Juli', 'Agustus', 'September')
+print(contoh_tuple[0])
