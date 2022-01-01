@@ -25,7 +25,7 @@ list_menu = list_makanan + list_minuman
 print(list_menu)
 
 ## Quiz
-"""
+
 ## List Manipulation – Part 1
 # Fitur .append()
 print(">>> Fitur .append()")
@@ -269,3 +269,145 @@ rata_rata_pengeluaran = total_pengeluaran / len(keuangan['pengeluaran'])
 rata_rata_pemasukan = total_pemasukan / len(keuangan['pemasukan'])
 print(rata_rata_pengeluaran) 
 print(rata_rata_pemasukan)
+
+#Chapter2 - 
+
+## Apa itu String Manipulation?
+nama_produk = "Sepatu Niko"
+nama_produk = nama_produk[:2] + "P" + nama_produk[3:9] + "K" + nama_produk[-1]
+print(nama_produk)
+print(nama_produk[:7])
+print(nama_produk[7:])
+print(len(nama_produk))
+
+## Operator “+” untuk Tipe Data String
+nama_depan = 'John'
+nama_belakang = 'Doee'
+nama_lengkap = nama_depan + ' ' + nama_belakang
+print(nama_lengkap)
+umur = '27 tahun'
+alamat = 'Jl. Anggrek No. 100'
+nama_umur_alamat = 'Hi, saya ' + nama_lengkap + ' umur ' + umur + ', tinggal di ' + alamat + '.'
+print(nama_umur_alamat)
+
+## Menghilangkan Spasi di Awal dan/atau di Akhir
+# Fitur .strip()
+print(">>> Fitur .strip()")
+kata_sambutan = ' halo, selamat siang! '
+kata_sambutan = kata_sambutan.strip()
+print(kata_sambutan)
+# Fitur .lstrip()
+print(">>> Fitur .lstrip()")
+kata_sambutan = ' halo, selamat siang! '
+kata_sambutan = kata_sambutan.lstrip()
+print(kata_sambutan)
+# Fitur .rstrip()
+print(">>> Fitur .rstrip()")
+kata_sambutan = ' halo, selamat siang! '
+kata_sambutan = kata_sambutan.rstrip()
+print(kata_sambutan)
+
+## Merubah Caps pada String
+# Fitur .capitalize()
+print(">>> Fitur .capitalize()")
+judul_buku = 'belajar bahasa Python'
+print(judul_buku.capitalize())
+# Fitur .lower()
+print(">>> Fitur .lower()")
+judul_buku = 'Belajar Bahasa PYTHON.'
+print(judul_buku.lower())
+# Fitur .upper()
+print(">>> Fitur .upper()")
+judul_buku = 'Belajar Bahasa PYTHON.'
+print(judul_buku.upper())
+
+## Pemecahan, Penggabungan, dan Penggantian String
+# Fitur .split()
+print(">>> Fitur .split()")
+bilangan = "ani dan budi dan wati dan johan"
+karakter = bilangan.split("dan")
+print(karakter)
+kata = bilangan.split(" ")
+print(kata)
+# Fitur .join()
+print(">>> Fitur .join()")
+pemisah = " dan "
+karakter = ["Ricky", "Peter", "Jordan"]
+kalimat = pemisah.join(karakter)
+print(kalimat)
+# Fitur .replace()
+print(">>> Fitur .replace()")
+kalimat = "apel malang apel yang paling segar, apel sehat, apel nikmat"
+kalimat = kalimat.replace("apel", "jeruk")
+print(kalimat)
+
+## Menentukan Posisi dan Jumlah Sub-string pada String
+teks = "Apel malang adalah apel termanis dibanding apel-apel lainnya"
+# Fitur .find()
+print(">>> Fitur .find()")
+print(teks.find("Apel"))
+print(teks.find("malang"))
+# Fitur .count()
+print(">>> Fitur .count()")
+kemunculan_kata_apel = teks.count("apel")
+print(kemunculan_kata_apel)
+
+## Menentukan String Apakah Diawali/Diakhiri oleh Sub-string
+# Fitur .startswith()
+print(">>> Fitur .startswith()")
+teks = "Apel malang adalah apel termanis dibanding apel-apel lainnya"
+print(teks.startswith("Apel"))
+print(teks.startswith("apel"))
+# Fitur .endswith()
+print(">>> Fitur .endswith()")
+print(teks.endswith("lainnya"))
+print(teks.endswith("apel"))
+
+## Tugas Praktek pt1
+judul_artikel = [
+"Buah Salak Baik untuk Mata", "Buah Salak Kaya Potasium", 
+"Buah Jeruk Kaya Vitamin C", "Buah Salak Kaya Manfaat", 
+"Salak Baik untuk Jantung", "Jeruk dapat Memperkuat Tulang", 
+"Jeruk Mencegah Penyakit Asma", "Jeruk Memperkuat Gigi", 
+"Jeruk Mencegah Kolesterol Jahat", "Salak Mencegah Diabetes", 
+"Salak Memperkuat Dinding Usus", "Salak Baik untuk Darah",
+"Jeruk Kaya Manfaat untuk Jantung", "Salak si Kecil yang Baik", 
+"Jeruk dan Salak Buah Kaya Manfaat", "Buah Jeruk Enak",
+"Tips Panen Jeruk Ribuan Kilo", "Tips Bertanam Salak", 
+"Salak Manis untuk Berbuka", "Jeruk Baik untuk Wajah"
+]
+jumlah_artikel_jeruk = 0
+jumlah_artikel_salak = 0
+for judul in judul_artikel:
+    if judul.count("Jeruk") > 0: 
+        jumlah_artikel_jeruk += 1
+    if judul.count("Salak") > 0:
+        jumlah_artikel_salak += 1
+print(jumlah_artikel_jeruk) 
+print(jumlah_artikel_salak)
+
+## Tugas Praktek pt2
+judul_artikel = [
+"Buah Salak Baik untuk Mata", "Buah Salak Kaya Potasium", 
+"Buah Jeruk Kaya Vitamin C", "Buah Salak Kaya Manfaat", 
+"Salak Baik untuk Jantung", "Jeruk dapat Memperkuat Tulang", 
+"Jeruk Mencegah Penyakit Asma", "Jeruk Memperkuat Gigi", 
+"Jeruk Mencegah Kolesterol Jahat", "Salak Mencegah Diabetes", 
+"Salak Memperkuat Dinding Usus", "Salak Baik untuk Darah",
+"Jeruk Kaya Manfaat untuk Jantung", "Salak si Kecil yang Baik", 
+"Jeruk dan Salak Buah Kaya Manfaat", "Buah Jeruk Enak",
+"Tips Panen Jeruk Ribuan Kilo", "Tips Bertanam Salak", 
+"Salak Manis untuk Berbuka", "Jeruk Baik untuk Wajah"
+]
+kata_positif = ["Kaya", "Baik", "Mencegah", "Memperkuat"]
+kata_positif_jeruk = 0
+kata_positif_salak = 0
+for judul in judul_artikel: 
+    for kata in kata_positif:
+        if judul.count("Jeruk") > 0 and judul.count(kata) > 0: 
+            kata_positif_jeruk += 1
+        if judul.count("Salak") > 0 and judul.count(kata) > 0:
+            kata_positif_salak += 1
+print(kata_positif_jeruk) 
+print(kata_positif_salak)
+"""
