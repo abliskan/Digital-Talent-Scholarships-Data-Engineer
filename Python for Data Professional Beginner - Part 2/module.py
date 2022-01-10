@@ -735,6 +735,7 @@ def price_based_on_similarity(data, list_of_data):
       perbedaan_terkecil = perbedaan
   return prediksi_harga
 ### STEP 8:
+
 ### Hitung harga rumah yang telah ditransformasikan ke dalam variabel 
 # harga_rumah berikut dengan atributnya attr_info
 harga_rumah, attr_info = data_transformation(harga_rumah,
